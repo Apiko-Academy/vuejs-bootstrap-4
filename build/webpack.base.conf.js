@@ -10,7 +10,6 @@ var env = process.env.NODE_ENV
 var cssSourceMapDev = (env === 'development' && config.dev.cssSourceMap)
 var cssSourceMapProd = (env === 'production' && config.build.productionSourceMap)
 var useCssSourceMap = cssSourceMapDev || cssSourceMapProd
-var sassPath = path.resolve(__dirname, './src/styles/')
 
 module.exports = {
   entry: {
@@ -29,7 +28,7 @@ module.exports = {
       'src': path.resolve(__dirname, '../src'),
       'assets': path.resolve(__dirname, '../src/assets'),
       'components': path.resolve(__dirname, '../src/components'),
-      'style': sassPath
+      styles: path.resolve(__dirname, '../src/styles'),
     }
   },
   resolveLoader: {
@@ -110,6 +109,8 @@ module.exports = {
       $: 'jquery',
       jQuery: 'jquery',
       'window.jQuery': 'jquery',
+      tether: 'tether',
+      Tether: 'tether'
     })
   ]
 }

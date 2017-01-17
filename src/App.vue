@@ -2,16 +2,24 @@
   <div id="app">
     <img src="./assets/logo.png">
     <hello></hello>
+    <bootstrap-example></bootstrap-example>
+
   </div>
 </template>
 
 <script>
+import $ from 'jquery';
 import Hello from './components/Hello';
+import BootstrapExample from './components/BootstrapExample';
 
 export default {
   name: 'app',
   components: {
     Hello,
+    BootstrapExample,
+  },
+  mounted() {
+    $('.carousel').carousel();
   },
 };
 </script>

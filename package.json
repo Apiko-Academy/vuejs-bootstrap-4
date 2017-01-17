@@ -1,6 +1,6 @@
 {
   "name": "vuejs-bootstrap-4",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Vue.js bootstrap-4 boilerplate",
   "author": "uapasha <uapasha@gmail.com>",
   "private": true,
@@ -12,6 +12,7 @@
   "dependencies": {
     "bootstrap": "^4.0.0-alpha.6",
     "jquery": "^3.1.1",
+    "tether": "^1.4.0",
     "vue": "^2.1.0"
   },
   "devDependencies": {
